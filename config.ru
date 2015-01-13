@@ -81,7 +81,7 @@ __END__
 @@ index
 <% if authenticated? %>
   <h2>
-    <img src='https://gravatar.com/avatar/<%= env['warden'].user.gravatar_id %>.png?r=PG&s=50' />
+    <img src='<%= env['warden'].user.avatar_url %>' />
     Welcome <%= github_user.name %>
   </h2>
 <% else %>
